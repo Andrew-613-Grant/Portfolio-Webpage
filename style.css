@@ -1,0 +1,300 @@
+/* font-family: 'Cairo', sans-serif; used for h1
+font-family: 'Poppins', sans-serif; used for headings
+font-family: 'Quicksand', sans-serif; paragraphs */
+
+/*color palette
+lightest to darkest
+➡️ #d2d1d4
+➡️ #a5a3a9
+➡️ #79747e
+➡️ #4c4653
+➡️ #1f1828
+*/
+
+body {
+    background-color:#e4e4e4;
+    font-size: 16px;
+    font-weight:800;
+    line-height: 1.5;
+    font-family: Quicksand, sans-serif;
+    display:flexbox;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 800;
+    padding-left: 20px;
+}
+p {
+    font-family: Quicksand, sans-serif;
+    color: rgb(164, 206, 101);
+    font-size: 1.2rem;
+    margin-left: 0px;
+    text-align: left;
+}
+header {
+    background-image: url('https://goproposal.com/wp-content/uploads/2019/01/GoProposal-Page-Header-Background.png');
+    display:flex-box;
+    flex-direction: row;
+    position:relative;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+h1{
+    text-align:center;
+    font-family: Poppins, sans-serif;
+    color:ghostwhite;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    font-weight: 700;
+    text-shadow: 0 2px 2px darkgray;
+    
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    height: 2.8rem;
+    border-radius: 3px;
+}
+ul{
+    list-style-type: none; 
+}
+.nav-link{
+    display:inline;
+    padding:0 80px;
+}
+nav a {
+    justify-content: space-around;
+    text-decoration: none;
+    color: rgb(164, 206, 101);
+    text-shadow: 2px 2px 3px black;
+    font-size: 1.5rem;
+    transition: 1s;
+    transform: scale(0);
+}
+nav a:hover {
+    color:white;
+    text-shadow: 3px 3px 3px black;
+}
+nav a:active {
+    transform: skewX(5px);
+}
+
+.info-box{
+    margin-top: 40px;
+    background-color: gainsboro;
+    box-shadow: 5px 12px 8px black;
+    border-radius: 10px;
+}
+#about{
+    display: flexbox;
+    height: 400px;
+}
+#about h2 {
+    display:inline-flex;
+    margin-right: 40px;
+    position: relative;
+}
+#about p{
+    position: relative;
+    display:inline-flex;
+    width: 700px;
+    font-weight: 600;
+    word-spacing: 5px;
+    font-family: Cairo, sans-serif;
+    font-size: 1.25rem;
+    color: black;
+}
+#pic-area{
+    position: relative;
+    float:right;
+    width: 275px;
+    height: 325px;
+    margin: 20px 80px;
+    border: 5px solid black;
+    border-radius: 8%;
+    transition: 0.5s;
+    background-image: url('AGb&wPic.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#pic-area p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.7s;
+    font-family: Quicksand, sans-serif;
+    font-size: 2rem;
+    color:white;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px black;
+    margin-top:50%;
+    margin-left: 10px;
+}
+#pic-area:hover{
+    box-shadow: 0 0 0 140px rgba(0,0,0,0.7) inset;
+}
+#pic-area:hover p{
+    opacity: 1;
+    transform:scale(1);
+}
+
+#project-section{
+    display: flex;
+    height:auto;
+    padding: 20px;
+
+}
+#project-section ul{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+}
+
+#project-section li{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    padding: 20px;
+    margin-left: 60px;
+}
+.expansions{
+display: flex;
+flex-direction: column;
+position:relative;
+visibility: hidden;
+height: fit-content;
+width: fit-content;
+background-color: black;
+box-shadow: inset 0px 0px 10px white;
+border: black 12px groove;
+color: #fff;
+text-align: center;
+border-radius: 50px;
+padding: 20px 5px;
+position: absolute;
+z-index: 10;
+bottom: 60%;
+left: 10%;
+margin-left: -80px;
+}
+.expansions h3{
+    text-decoration: underline;
+    text-decoration-color: #e4e4e4;
+}
+.expand-text{
+    justify-content: left;
+}
+#box {
+    text-align: left;
+}
+.expand-text p{
+    text-align: left;
+    display:inline;
+    font-family: Quicksand, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: rgb(164, 206, 101);
+    font-size: 1rem;
+}
+
+#skills{
+    margin-top: 30px;
+    background-color: rgb(164, 206, 101);
+    display: flex;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 98%;
+}
+#skills h2{
+    margin-left: 10px;
+}
+.logo-box{
+    position: relative;
+    float: right;
+    padding: 30px 100px;
+    justify-content: space-between;
+}
+i{
+    padding: 0 30px;
+}
+button{
+    background-color: rgb(164, 206, 101);
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 5px 1px black;
+    padding:5px;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    transform:translateY(5px);
+    box-shadow:1px 1px 3px black inset;
+}
+/* Media Queries */
+@media only screen and (max-width: 1312px){
+    #about{
+        height:max-content;
+    }
+    #about p{
+        width: 600px;
+        font-size: 17px;
+    }
+    #pic-area{
+        width: 200px;
+        height: 225px;
+    }
+
+    .projects-section{
+        width:max-content;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    #pic-area{
+        width: 120px;
+        margin: 40px 60px 10px 20px;
+    }    
+}
+
+@media only screen and (max-width: 1116px) and (min-width: 600px) {
+    body{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+        nav a{
+        font-size: 1rem;
+    }
+    .nav-link{
+        padding: 0 10px;
+    }
+    #about p{
+        font-size: 14px;
+        word-wrap:break-word;
+        word-spacing: 2px;
+        width: 500px;
+    }   
+    #pic-area{
+        width: 100px;
+        height: 150px;
+        margin: 40px 30px;
+    }
+}   
+@media only screen and(max-width: 837px) {
+    #about p{
+        width: 200px;
+        word-wrap: break-word;
+    }
+    
+}
+@media only screen and(max-width: 600px){
+    i{
+        padding: 0 10px;
+        display:inline;
+    }
+}

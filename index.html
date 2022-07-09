@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Grant Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&family=Poppins&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fc06c590b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="alert">
+    <header>
+
+      <h1>ANDREW GRANT</h1>
+      <nav>
+        <ul>
+          <li class="nav-link"><a href="#about">About</a></li>
+          <li class="nav-link"><a href="#project-section">Projects</a></li>
+          <li class="nav-link"><a href="#skills">Skills</a></li>
+          <li class="nav-link"><a href="/contact.html" target="_blank">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- About section with Picture -->
+    <div id="about" class="info-box">
+      <h2>about</h2>
+      <p>
+        Andrew began learning HTML, CSS, and Javascript in 2021. His passion for
+        front-end development had been building for numerous years, so when the
+        opportunity arose to begin that journey he jumped on it. Prior to his
+        recent studies, he specialized in cabinetmaking, including design, as
+        well as various multi-media art. He is motivated by his desire to
+        continuously be learning new things and exploring the unknown.
+        <br /><br />He aspires to put all of his knowledge, from every aspect of
+        his life, towards web development. Andrew is from and currently lives in
+        Ottawa, Ontario, Canada.
+      </p>
+      <div id="pic-area">
+        <p>ANDREW GRANT</p>
+      </div>
+    </div>
+
+<!-- List of projects, with popup windows and buttons -->
+    <div id="project-section" class="info-box">
+      <h2>projects</h2>
+      <ul>
+        <li class="project-title">
+          <h3 id="ex2">Tribute Page</h3>
+          <section class="thumbnail">
+            <img src="Tribute-page-img.png" width="200px" height="90px" alt="thumbnail picture of the "/>
+          </section>
+
+          <div class="expansions" id="expand1">
+          <h3>Skills used on this project</h3>
+          <ul class="expand-text">
+              <li id="box"><p>Introduction to HTML</p></li>
+              <li id="box"><p>Beginner CSS</p></li>
+              <li id="box"><p>Design elements(i.e. border-radius, image-focused page)</p></li>
+          </ul>
+          </div>
+
+            <button id="button1" onclick="toggleDiv('expand1', 'button1')">Expand</button>
+
+        </li>
+        <li class="project-title">
+          <h3 id="ex2">Technical Documentation Project</h3>
+          <section class="thumbnail">
+              <img src="Technical-Documentation-img.png" width="200px" height="90px" alt="thumbnail picture of example project 2"/>
+        </section>
+        
+            <button id="button2" onclick="toggleDiv('expand2', 'button2')">Expand</button>
+            <div class="expansions" id="expand2">
+                <h3>Skills used on this project</h3>
+                <ul class="expand-text">
+                    <li id="box">HELLO 👋</li>
+                    <li id="box">HELLO 👋</li>
+                    <li id="box">HELLO 👋</li>
+                    <li id="box">HELLO 👋</li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="project-title">
+         <h3 id="ex3">Placeholder</h3>
+         <section class="thumbnail">
+            <img src="coming soon.jpg" width="200px" height="90px" alt="thumbnail picture of example project 3"/>
+         </section>
+
+            <button id="button3" onclick="toggleDiv('expand3', 'button3')">Expand</button>
+            <div class="expansions" id="expand3">
+                <h3>Skills used on this project</h3>
+                <ul class="expand-text">
+                    <li id="box">HELLO 👋</li>
+                    <li id="box">HELLO 👋</li>
+                    <li id="box">HELLO 👋</li>
+                    <li id="box">HELLO 👋</li>
+                </ul>
+            </div>
+        </li>
+     </ul>
+    </div>
+    <!-- End of project section (leave room for more projects) -->
+
+<!-- Skills section at bottom of page w/ fontAwesome icons -->
+    <article id="skills">
+      <h2>skills</h2>
+      <div class="logo-box">
+        <span><i class="fa-brands fa-html5 fa-2xl logo"></i></span>
+        <span><i class="fa-brands fa-css3-alt fa-2xl logo"></i></span>
+        <span><i class="fa-brands fa-js-square fa-2xl logo"></i></span>
+        <span><i class="fa-brands fa-git-square fa-2xl logo"></i></span>
+        <span><i class="fa-brands fa-github-square fa-2xl logo"></i></span>
+        <span><i class="fa-solid fa-terminal fa-2xl logo"></i></span>
+        <span><i class="fa-brands fa-chrome fa-2xl logo"></i></span>
+        <span><i class="fa-solid fa-universal-access fa-2xl logo"></i></span>
+      </div>
+    </article>
+  </body>
+  <!-- End of skills section -->
+</html>
